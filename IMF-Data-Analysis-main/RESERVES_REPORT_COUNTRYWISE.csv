@@ -1,0 +1,205 @@
+COUNTRY,GOLD_PERCENTAGE,FOREX_PERCENTAGE,SDRs_PERCENTAGE,IMF_PERCENTAGE
+"United States",41.71,51.27,5.93,1.08
+Germany,41.56,53.15,4.51,0.78
+France,40.50,54.54,4.18,0.78
+Italy,40.08,56.11,3.23,0.58
+Portugal,39.26,57.61,2.64,0.50
+"Kazakhstan, Republic of",38.92,59.39,1.50,0.20
+Austria,37.27,54.50,7.01,1.22
+"Netherlands, The",36.37,54.98,7.43,1.22
+Greece,34.51,57.86,6.05,1.58
+"Türkiye, Republic of",33.85,63.64,2.46,0.05
+Cyprus,33.70,54.90,9.52,1.89
+Bulgaria,33.20,55.07,11.00,0.72
+Belgium,29.12,56.21,12.74,1.93
+"Belarus, Republic of",26.23,69.20,4.57,0.00
+Zimbabwe,23.16,76.58,0.25,0.02
+Algeria,19.48,76.77,3.24,0.51
+"Egypt, Arab Republic of",19.14,79.95,0.54,0.37
+"Emerging and Developing Europe",18.93,79.20,1.63,0.24
+Ecuador,18.58,81.20,0.03,0.18
+"Advanced Economies",17.88,78.40,3.15,0.57
+Pakistan,17.61,82.17,0.22,0.00
+Spain,16.20,77.02,5.51,1.27
+Cambodia,15.27,84.04,0.64,0.05
+Qatar,15.24,83.33,1.20,0.23
+"Poland, Republic of",14.80,83.96,0.99,0.25
+Finland,14.47,73.00,10.64,1.89
+World,14.01,83.22,2.36,0.41
+"Slovak Republic",13.06,81.03,4.92,0.98
+"Advanced, Emerging and Developing Economies",12.82,87.18,0.00,0.00
+Sweden,12.43,80.25,6.28,1.04
+"Serbia, Republic of",12.20,87.68,0.02,0.10
+Hungary,12.09,85.98,1.62,0.30
+Kuwait,11.37,83.69,4.28,0.66
+Argentina,10.95,89.01,0.05,0.00
+"United Kingdom",10.52,78.89,8.95,1.65
+Libya,10.27,87.35,2.12,0.26
+"Middle East and Central Asia",10.11,87.83,1.78,0.28
+Mauritius,9.38,88.86,1.50,0.25
+Philippines,9.32,88.50,1.84,0.34
+India,9.25,89.10,1.32,0.34
+"Slovenia, Republic of",9.06,73.06,14.91,2.97
+"North Macedonia, Republic of",8.47,91.53,0.00,0.00
+Australia,8.40,79.75,10.14,1.72
+Georgia,8.38,87.93,3.69,0.00
+Romania,8.34,89.65,2.01,0.00
+"Latvia, Republic of",8.07,86.38,4.90,0.65
+"Emerging Market and Developing Economies",8.02,90.26,1.47,0.25
+Switzerland,7.21,92.10,0.60,0.10
+Ireland,6.52,67.71,21.39,4.38
+"Sub-Saharan Africa (SSA)",6.44,88.62,4.48,0.47
+Thailand,6.21,92.57,1.01,0.20
+"Lithuania, Republic of",6.08,87.46,5.38,1.08
+Luxembourg,5.45,53.07,33.86,7.62
+"Emerging and Developing Asia",5.28,93.56,0.97,0.19
+"Bahrain, Kingdom of",5.19,88.80,4.63,1.38
+Suriname,4.88,92.41,2.64,0.07
+"China, People's Republic of",4.57,94.54,0.74,0.15
+Japan,4.56,92.84,2.20,0.40
+"Saudi Arabia",4.40,93.35,1.93,0.31
+Indonesia,4.36,92.75,2.53,0.36
+Denmark,3.94,92.86,2.73,0.48
+Ukraine,3.90,94.71,1.38,0.00
+"Latin America and the Caribbean (LAC)",3.67,93.25,2.59,0.49
+Bangladesh,3.60,92.11,3.98,0.31
+Brazil,3.53,93.23,2.68,0.56
+Guatemala,3.47,95.34,1.08,0.11
+Morocco,3.36,94.37,2.06,0.21
+Mexico,3.32,93.05,3.03,0.61
+Nigeria,3.29,92.08,4.38,0.24
+"Czech Republic",3.26,95.52,1.00,0.22
+Singapore,3.24,95.88,0.72,0.16
+"El Salvador",3.12,94.76,2.12,0.00
+Malaysia,2.57,94.60,2.33,0.50
+"United Arab Emirates",1.97,97.30,0.59,0.14
+Iceland,1.95,93.58,3.85,0.62
+Malta,1.87,85.38,10.95,1.80
+"Korea, Republic of",1.79,96.05,1.79,0.36
+"Estonia, Republic of",0.81,88.49,8.89,1.82
+Samoa,0.47,95.81,3.50,0.21
+Maldives,0.35,99.40,0.01,0.24
+"Comoros, Union of the",0.32,94.59,4.57,0.52
+"Dominican Republic",0.26,99.36,0.10,0.27
+"Moldova, Republic of",0.09,99.90,0.01,0.00
+Kenya,0.01,99.51,0.41,0.07
+Bolivia,0.00,0.00,0.00,0.00
+Panama,0.00,93.63,5.58,0.80
+"Venezuela, República Bolivariana de",0.00,0.00,0.00,0.00
+"Eastern Caribbean Central Bank (ECCB)",0.00,0.00,0.00,0.00
+Israel,0.00,99.00,0.86,0.14
+Oman,0.00,0.00,0.00,0.00
+Lebanon,0.00,0.00,0.00,0.00
+"Yemen, Republic of",0.00,0.00,0.00,0.00
+"Afghanistan, Islamic Republic of",0.00,0.00,0.00,0.00
+"West Bank and Gaza",0.00,0.00,0.00,0.00
+"Lao People's Democratic Republic",0.00,0.00,0.00,0.00
+Vietnam,0.00,0.00,0.00,0.00
+Burundi,0.00,0.00,0.00,0.00
+Cameroon,0.00,0.00,0.00,0.00
+Chad,0.00,0.00,0.00,0.00
+"Central African Republic",0.00,0.00,0.00,0.00
+"Congo, Republic of",0.00,0.00,0.00,0.00
+"Ethiopia, The Federal Democratic Republic of",0.00,0.00,0.00,0.00
+"Congo, Democratic Republic of the",0.00,0.00,0.00,0.00
+"Eritrea, The State of",0.00,0.00,0.00,0.00
+Gabon,0.00,0.00,0.00,0.00
+Ghana,0.00,0.00,0.00,0.00
+"Gambia, The",0.00,0.00,0.00,0.00
+Malawi,0.00,0.00,0.00,0.00
+"Mauritania, Islamic Republic of",0.00,0.00,0.00,0.00
+Namibia,0.00,0.00,0.00,0.00
+Seychelles,0.00,0.00,0.00,0.00
+Sudan,0.00,0.00,0.00,0.00
+Zambia,0.00,0.00,0.00,0.00
+"Tanzania, United Republic of",0.00,0.00,0.00,0.00
+"West African Economic and Monetary Union (WAEMU)",0.00,0.00,0.00,0.00
+"Banque des États de l'Afrique Centrale (BEAC)",0.00,0.00,0.00,0.00
+"Banque Centrale des États de l'Afrique de l'Ouest (BCEAO)",0.00,0.00,0.00,0.00
+"Central African Economic and Monetary Community (CEMAC)",0.00,0.00,0.00,0.00
+"Micronesia, Federated States of",0.00,0.00,0.00,0.00
+"Kyrgyz Republic",0.00,0.00,0.00,0.00
+"Uzbekistan, Republic of",0.00,0.00,0.00,0.00
+"Tajikistan, Republic of",0.00,0.00,0.00,0.00
+"Kosovo, Republic of",0.00,0.00,0.00,0.00
+"Bosnia and Herzegovina",0.00,0.00,0.00,0.00
+"Euro Area (EA)",0.00,0.00,0.00,0.00
+"Timor-Leste, Democratic Republic of",0.00,0.00,0.00,0.00
+Paraguay,0.00,0.00,0.00,0.00
+Canada,0.00,88.99,9.38,1.63
+"Equatorial Guinea, Republic of",0.00,0.00,0.00,0.00
+"St. Kitts and Nevis",0.00,0.00,0.00,0.00
+"Eastern Caribbean Currency Union (ECCU)",0.00,0.00,0.00,0.00
+"Cabo Verde",0.00,0.00,0.00,0.00
+"Papua New Guinea",0.00,0.00,0.00,0.00
+"Anguilla, United Kingdom-British Overseas Territory",0.00,0.00,0.00,0.00
+Albania,0.00,0.00,0.00,0.00
+"Macao Special Administrative Region, People's Republic of China",0.00,100.00,0.00,0.00
+Vanuatu,0.00,0.00,0.00,0.00
+Grenada,0.00,0.00,0.00,0.00
+Angola,0.00,98.31,1.08,0.60
+"Sri Lanka",0.00,0.00,0.00,0.00
+"St. Lucia",0.00,0.00,0.00,0.00
+"Solomon Islands",0.00,0.00,0.00,0.00
+Nicaragua,0.00,97.81,1.96,0.23
+Mongolia,0.00,0.00,0.00,0.00
+"São Tomé and Príncipe, Democratic Republic of",0.00,0.00,0.00,0.00
+"Madagascar, Republic of",0.00,0.00,0.00,0.00
+"Costa Rica",0.00,98.22,1.53,0.25
+"Brunei Darussalam",0.00,0.00,0.00,0.00
+Colombia,0.00,0.00,0.00,0.00
+Dominica,0.00,0.00,0.00,0.00
+Norway,0.00,95.12,4.15,0.73
+Djibouti,0.00,0.00,0.00,0.00
+Belize,0.00,0.00,0.00,0.00
+Nepal,0.00,0.00,0.00,0.00
+Guyana,0.00,99.91,0.09,0.00
+Haiti,0.00,0.00,0.00,0.00
+"Montserrat, United Kingdom-British Overseas Territory",0.00,0.00,0.00,0.00
+Iraq,0.00,0.00,0.00,0.00
+Barbados,0.00,0.00,0.00,0.00
+Chile,0.00,0.00,0.00,0.00
+"Azerbaijan, Republic of",0.00,0.00,0.00,0.00
+"Sierra Leone",0.00,0.00,0.00,0.00
+"Eswatini, Kingdom of",0.00,0.00,0.00,0.00
+Tonga,0.00,96.17,3.24,0.59
+"South Sudan, Republic of",0.00,0.00,0.00,0.00
+"Mozambique, Republic of",0.00,0.00,0.00,0.00
+Rwanda,0.00,0.00,0.00,0.00
+"Lesotho, Kingdom of",0.00,0.00,0.00,0.00
+"Fiji, Republic of",0.00,0.00,0.00,0.00
+"Croatia, Republic of",0.00,82.52,16.90,0.58
+"St. Vincent and the Grenadines",0.00,0.00,0.00,0.00
+"South Africa",0.00,0.00,0.00,0.00
+"Antigua and Barbuda",0.00,0.00,0.00,0.00
+"Armenia, Republic of",0.00,99.98,0.01,0.00
+Jamaica,0.00,0.00,0.00,0.00
+Bhutan,0.00,0.00,0.00,0.00
+Uganda,0.00,0.00,0.00,0.00
+"Russian Federation",0.00,0.00,0.00,0.00
+Botswana,0.00,0.00,0.00,0.00
+Honduras,0.00,0.00,0.00,0.00
+Uruguay,0.00,0.00,0.00,0.00
+"Trinidad and Tobago",0.00,0.00,0.00,0.00
+Tunisia,0.00,0.00,0.00,0.00
+"San Marino, Republic of",0.00,0.00,0.00,0.00
+Peru,0.00,0.00,0.00,0.00
+"Bahamas, The",0.00,0.00,0.00,0.00
+"Hong Kong Special Administrative Region, People's Republic of China",0.00,0.00,0.00,0.00
+Liberia,0.00,0.00,0.00,0.00
+"New Zealand",0.00,95.20,4.17,0.62
+Jordan,0.00,0.00,0.00,0.00
+Somalia,0.00,0.00,0.00,0.00
+Guinea,0.00,0.00,0.00,0.00
+Montenegro,0.00,0.00,0.00,0.00
+"Cayman Islands",0.00,0.00,0.00,0.00
+"Aruba, Kingdom of the Netherlands",0.00,0.00,0.00,0.00
+"European Central Bank (ECB)",0.00,0.00,0.00,0.00
+"Curaçao and Sint Maarten",0.00,0.00,0.00,0.00
+"Taiwan Province of China",0.00,0.00,0.00,0.00
+"Bank for International Settlements (BIS)",0.00,0.00,0.00,0.00
+"International Monetary Fund (IMF)",0.00,0.00,0.00,0.00
+Cuba,0.00,0.00,0.00,0.00
+"Syrian Arab Republic",0.00,0.00,0.00,0.00
+Turkmenistan,0.00,0.00,0.00,0.00
+"Iran, Islamic Republic of",0.00,0.00,0.00,0.00

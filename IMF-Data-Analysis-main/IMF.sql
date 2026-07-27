@@ -1,0 +1,737 @@
+
+## DATASET ID F00; IFS; E52_IR
+-- International trade, balance of payments, and external debt
+-- Dataset: International Liquidity (IL)
+
+USE IMF;
+
+DROP TABLE IF EXISTS INTERNATIONAL_LIQUIDITY;
+
+CREATE TABLE INTERNATIONAL_LIQUIDITY (
+
+    SERIES_CODE TEXT,
+    COUNTRY_ID TEXT,
+    COUNTRY TEXT,
+    INDICATOR_ID TEXT,
+    INDICATOR TEXT,
+    INDICATOR_DESCRIPTION TEXT,
+    UNIT TEXT,
+    FREQUENCY VARCHAR(10),
+
+    `2017` DECIMAL(20,8),
+    `2017_Q1` DECIMAL(20,8),
+    `2017_M01` DECIMAL(20,8),
+    `2017_M02` DECIMAL(20,8),
+    `2017_M03` DECIMAL(20,8),
+
+    `2018` DECIMAL(20,8),
+    `2018_Q1` DECIMAL(20,8),
+    `2018_M01` DECIMAL(20,8),
+    `2018_M02` DECIMAL(20,8),
+    `2018_M03` DECIMAL(20,8),
+
+    `2019` DECIMAL(20,8),
+    `2019_Q1` DECIMAL(20,8),
+    `2019_M01` DECIMAL(20,8),
+    `2019_M02` DECIMAL(20,8),
+    `2019_M03` DECIMAL(20,8),
+
+    `2020` DECIMAL(20,8),
+    `2020_Q1` DECIMAL(20,8),
+    `2020_M01` DECIMAL(20,8),
+    `2020_M02` DECIMAL(20,8),
+    `2020_M03` DECIMAL(20,8),
+
+    `2021` DECIMAL(20,8),
+    `2021_Q1` DECIMAL(20,8),
+    `2021_M01` DECIMAL(20,8),
+    `2021_M02` DECIMAL(20,8),
+    `2021_M03` DECIMAL(20,8),
+
+    `2022` DECIMAL(20,8),
+    `2022_Q1` DECIMAL(20,8),
+    `2022_M01` DECIMAL(20,8),
+    `2022_M02` DECIMAL(20,8),
+    `2022_M03` DECIMAL(20,8),
+
+    `2023` DECIMAL(20,8),
+    `2023_Q1` DECIMAL(20,8),
+    `2023_M01` DECIMAL(20,8),
+    `2023_M02` DECIMAL(20,8),
+    `2023_M03` DECIMAL(20,8),
+
+    `2024` DECIMAL(20,8),
+    `2024_Q1` DECIMAL(20,8),
+    `2024_M01` DECIMAL(20,8),
+    `2024_M02` DECIMAL(20,8),
+    `2024_M03` DECIMAL(20,8),
+
+    `2025` DECIMAL(20,8),
+    `2025_Q1` DECIMAL(20,8),
+    `2025_M01` DECIMAL(20,8),
+    `2025_M02` DECIMAL(20,8),
+    `2025_M03` DECIMAL(20,8),
+
+    `2026_Q1` DECIMAL(20,8),
+    `2026_M01` DECIMAL(20,8),
+    `2026_M02` DECIMAL(20,8),
+    `2026_M03` DECIMAL(20,8),
+    `2026_M04` DECIMAL(20,8)
+
+) 
+
+PARTITION BY LIST COLUMNS(FREQUENCY) (
+    PARTITION monthly VALUES IN ('M'),
+    PARTITION quarterly VALUES IN ('Q'),
+    PARTITION annually VALUES IN ('A')
+);
+
+-- Metadata Variables
+
+SET @SUGGESTED_CITATION = 'International Monetary Fund. International Liquidity (IL), https://data.imf.org/en/datasets/IMF.STA:IL. Accessed on current date';
+
+SET @LICENSE = '© International Monetary Fund Copyright. All Rights Reserved.';
+
+SET @SECURITY_CLASSIFICATION_ID = 'PUB';
+
+SET @SECURITY_CLASSIFICATION = 'Public or Unrestricted';
+
+SET @SECURITY_CLASSIFICATION_DESCRIPTION =
+'Information approved to be publicly available without restriction';
+
+SET @ACCESS_SHARING_NOTES = '';
+
+SET @ACCESS_SHARING_LEVEL_DESCRIPTION =
+'Share this data with the public without restrictions';
+
+SET @ACCESS_SHARING_LEVEL = 'Public (Unrestricted)';
+
+SET @ACCESS_SHARING_LEVEL_ID = 'PUBLIC_OPEN';
+
+SET @METHODOLOGY =
+'International Reserves and Foreign Currency Liquidity: Guidelines for a Data Template 2013';
+
+SET @METHODOLOGY_ID = 'IRFCL13';
+
+SET @UPDATE_DATE = '2026-05-25 08:54:28';
+
+SET @SCALE = 'MILLIONS';
+
+SET @TROY_OUNCE_GM = 31.1034768;
+
+-- Load CSV Data
+SET GLOBAL local_infile=1;
+LOAD DATA INFILE 'INTERNATIONAL_LIQUIDITY.csv'
+INTO TABLE INTERNATIONAL_LIQUIDITY
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(
+SERIES_CODE,
+@COUNTRY_ID,
+COUNTRY,
+@INDICATOR_ID,
+INDICATOR,
+@INDICATOR_DESCRIPTION,
+UNIT,
+FREQUENCY,
+
+`2017`,
+@2017_Q1,
+@2017_M01,
+@2017_M02,
+@2017_M03,
+
+@2017_Q2,
+@2017_M04,
+@2017_M05,
+@2017_M06,
+
+@2017_Q3,
+@2017_M07,
+@2017_M08,
+@2017_M09,
+
+@2017_Q4,
+@2017_M10,
+@2017_M11,
+@2017_M12,
+
+`2018`,
+@2018_Q1,
+@2018_M01,
+@2018_M02,
+@2018_M03,
+
+@2018_Q2,
+@2018_M04,
+@2018_M05,
+@2018_M06,
+
+@2018_Q3,
+@2018_M07,
+@2018_M08,
+@2018_M09,
+
+@2018_Q4,
+@2018_M10,
+@2018_M11,
+@2018_M12,
+
+`2019`,
+@2019_Q1,
+@2019_M01,
+@2019_M02,
+@2019_M03,
+
+@2019_Q2,
+@2019_M04,
+@2019_M05,
+@2019_M06,
+
+@2019_Q3,
+@2019_M07,
+@2019_M08,
+@2019_M09,
+
+@2019_Q4,
+@2019_M10,
+@2019_M11,
+@2019_M12,
+
+`2020`,
+@2020_Q1,
+@2020_M01,
+@2020_M02,
+@2020_M03,
+
+@2020_Q2,
+@2020_M04,
+@2020_M05,
+@2020_M06,
+
+@2020_Q3,
+@2020_M07,
+@2020_M08,
+@2020_M09,
+
+@2020_Q4,
+@2020_M10,
+@2020_M11,
+@2020_M12,
+
+`2021`,
+@2021_Q1,
+@2021_M01,
+@2021_M02,
+@2021_M03,
+
+@2021_Q2,
+@2021_M04,
+@2021_M05,
+@2021_M06,
+
+@2021_Q3,
+@2021_M07,
+@2021_M08,
+@2021_M09,
+
+@2021_Q4,
+@2021_M10,
+@2021_M11,
+@2021_M12,
+
+`2022`,
+@2022_Q1,
+@2022_M01,
+@2022_M02,
+@2022_M03,
+
+@2022_Q2,
+@2022_M04,
+@2022_M05,
+@2022_M06,
+
+@2022_Q3,
+@2022_M07,
+@2022_M08,
+@2022_M09,
+
+@2022_Q4,
+@2022_M10,
+@2022_M11,
+@2022_M12,
+
+`2023`,
+@2023_Q1,
+@2023_M01,
+@2023_M02,
+@2023_M03,
+
+@2023_Q2,
+@2023_M04,
+@2023_M05,
+@2023_M06,
+
+@2023_Q3,
+@2023_M07,
+@2023_M08,
+@2023_M09,
+
+@2023_Q4,
+@2023_M10,
+@2023_M11,
+@2023_M12,
+
+`2024`,
+@2024_Q1,
+@2024_M01,
+@2024_M02,
+@2024_M03,
+
+@2024_Q2,
+@2024_M04,
+@2024_M05,
+@2024_M06,
+
+@2024_Q3,
+@2024_M07,
+@2024_M08,
+@2024_M09,
+
+@2024_Q4,
+@2024_M10,
+@2024_M11,
+@2024_M12,
+
+`2025`,
+@2025_Q1,
+@2025_M01,
+@2025_M02,
+@2025_M03,
+
+@2025_Q2,
+@2025_M04,
+@2025_M05,
+@2025_M06,
+
+@2025_Q3,
+@2025_M07,
+@2025_M08,
+@2025_M09,
+
+@2025_Q4,
+@2025_M10,
+@2025_M11,
+@2025_M12,
+
+@2026_Q1,
+@2026_M01,
+@2026_M02,
+@2026_M03,
+@2026_M04
+)
+SET
+COUNTRY_ID = @COUNTRY_ID,
+INDICATOR_ID = @INDICATOR_ID,
+INDICATOR_DESCRIPTION = @INDICATOR_DESCRIPTION,
+
+`2017_Q1` = @2017_Q1,
+`2017_M01` = @2017_M01,
+`2017_M02` = @2017_M02,
+`2017_M03` = @2017_M03,
+
+`2018_Q1` = @2018_Q1,
+`2018_M01` = @2018_M01,
+`2018_M02` = @2018_M02,
+`2018_M03` = @2018_M03,
+
+`2019_Q1` = @2019_Q1,
+`2019_M01` = @2019_M01,
+`2019_M02` = @2019_M02,
+`2019_M03` = @2019_M03,
+
+`2020_Q1` = @2020_Q1,
+`2020_M01` = @2020_M01,
+`2020_M02` = @2020_M02,
+`2020_M03` = @2020_M03,
+
+`2021_Q1` = @2021_Q1,
+`2021_M01` = @2021_M01,
+`2021_M02` = @2021_M02,
+`2021_M03` = @2021_M03,
+
+`2022_Q1` = @2022_Q1,
+`2022_M01` = @2022_M01,
+`2022_M02` = @2022_M02,
+`2022_M03` = @2022_M03,
+
+`2023_Q1` = @2023_Q1,
+`2023_M01` = @2023_M01,
+`2023_M02` = @2023_M02,
+`2023_M03` = @2023_M03,
+
+`2024_Q1` = @2024_Q1,
+`2024_M01` = @2024_M01,
+`2024_M02` = @2024_M02,
+`2024_M03` = @2024_M03,
+
+`2025_Q1` = @2025_Q1,
+`2025_M01` = @2025_M01,
+`2025_M02` = @2025_M02,
+`2025_M03` = @2025_M03,
+
+`2026_Q1` = @2026_Q1,
+`2026_M01` = @2026_M01,
+`2026_M02` = @2026_M02,
+`2026_M03` = @2026_M03,
+`2026_M04` = @2026_M04;
+
+SELECT @@secure_file_priv;
+
+SELECT * FROM INTERNATIONAL_LIQUIDITY ;
+SELECT * FROM information_schema.partitions where table_name = 'INTERNATIONAL_LIQUIDITY'; 
+
+DROP TABLE IF EXISTS REPORT_BY_COUNTRY;
+
+#What is the total official reserve asset value per country for the most recent reporting period,ranked in descending order?
+
+#SELECT COUNTRY, `2026_M04` FROM INTERNATIONAL_LIQUIDITY  ORDER BY `2026_M04`;
+#SELECT COUNTRY FROM INTERNATIONAL_LIQUIDITY  GROUP BY COUNTRY;
+#SELECT COUNTRY,SUM(`2026_M04`) AS RESERVES FROM INTERNATIONAL_LIQUIDITY GROUP BY `COUNTRY` ORDER BY RESERVES DESC;
+
+
+#ON 2026 APR END IN USD
+SET @XDR = 1.36;
+SET @FTO = 4615;
+
+WITH RESERVE_DATA AS (
+    SELECT
+        COUNTRY,
+        INDICATOR,
+
+        CASE
+            WHEN UNIT = 'FTO' THEN `2026_Q1` * @FTO
+            WHEN UNIT = 'XDR' THEN `2026_Q1` * @XDR
+            ELSE `2026_Q1`
+        END AS USD_VALUE
+
+    FROM INTERNATIONAL_LIQUIDITY
+)
+
+SELECT
+    COUNTRY,
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Gold reserves (volume)'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS GOLD_RESERVES_BY_VOLUME,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Gold reserves at national valuation'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS GOLD_RESERVES_AT_NATIONAL_VALUATION,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Gold reserves at market value'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS GOLD_RESERVES_AT_MARKET_VALUE,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Gold reserves at 35 SDRs per ounce'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS GOLD_RESERVES_AT35_SDRS_PER_OUNCE,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Total reserves (gold at market value)'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS TOTAL_GOLD_RESERVES_AT_MARKET_VALUE,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Total reserves (gold at national valuation)'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS TOTAL_GOLD_RESERVES_AT_NATIONAL_VALUATION,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Reserves excluding gold'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS RESERVES_EXCLUDING_GOLD,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Reserves excluding gold, foreign exchange'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS RESERVES_EXCLUDING_GOLD_FOREX,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Reserves excluding gold, other reserve assets'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS RESERVES_EXCLUDING_OTHER,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Reserves, Special Drawing Rights (SDRs)'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS RESERVES_SDRS,
+
+    CAST(ROUND(SUM(CASE
+        WHEN INDICATOR = 'Reserves, reserve position in the IMF'
+        THEN USD_VALUE ELSE 0
+    END),2) AS DECIMAL(20,2)) AS RESERVES_POS_IN_IMF
+    
+FROM RESERVE_DATA
+GROUP BY COUNTRY
+ORDER BY TOTAL_GOLD_RESERVES_AT_MARKET_VALUE DESC;
+
+
+
+
+
+
+
+# WHAT PERCENTAGE OF EACH COUNTRY'S RESERVES IS HELD ING GOLD VS FOREX VS SDRs VS IMF RESERVE POSITION ?
+
+SELECT INDICATOR FROM INTERNATIONAL_LIQUIDITY GROUP BY INDICATOR;
+SELECT INDICATOR_ID FROM INTERNATIONAL_LIQUIDITY GROUP BY INDICATOR_ID;
+
+SELECT COUNTRY , SUM(`2026_M04`*4615) AS LATEST_GOLD_RESERVES FROM INTERNATIONAL_LIQUIDITY 
+WHERE INDICATOR ='Gold reserves (volume)' GROUP BY COUNTRY;
+
+SELECT COUNTRY , SUM(`2026_M04`) AS LATEST_FOREX_RESERVES FROM INTERNATIONAL_LIQUIDITY 
+WHERE INDICATOR ='Reserves excluding gold, foreign exchange' GROUP BY COUNTRY ORDER BY LATEST_FOREX_RESERVES DESC ;
+
+# SELECTING FOLLOWING INDICATORS 
+
+-- | Reserve Component | IMF Indicator                                   |
+-- | ----------------- | ----------------------------------------------- |
+-- | Gold              | `Gold reserves at market value`                 |
+-- | SDRs              | `Reserves, Special Drawing Rights (SDRs)`       |
+-- | IMF Position      | `Reserves, reserve position in the IMF`         |
+-- | Total             | `Total reserves (gold at market value)`         |
+
+DELIMITER $$
+create function TO_PERC(TOTAL decimal(20,8) , COMP decimal(20,8)) returns decimal(20,8) deterministic
+begin
+	IF TOTAL=0 THEN RETURN 0 ;
+	ELSE return (COMP*100)/TOTAL ;
+	END IF ;
+end $$ 
+
+
+
+WITH RESERVE_DATA AS (
+	SELECT
+        COUNTRY,
+        INDICATOR,
+        CASE
+            WHEN UNIT = 'FTO' THEN`2026_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2026_Q1` * 1.36
+            ELSE `2026_Q1`
+        END AS USD_VALUE
+    FROM INTERNATIONAL_LIQUIDITY
+),
+RESERVE_COMPONENTS AS (
+    SELECT
+        COUNTRY,
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE ELSE 0
+        END) AS GOLD,
+
+        SUM(CASE
+            WHEN INDICATOR = 'Reserves, Special Drawing Rights (SDRs)'
+            THEN USD_VALUE ELSE 0
+        END) AS SDRS,
+
+        SUM(CASE
+            WHEN INDICATOR = 'Reserves, reserve position in the IMF'
+            THEN USD_VALUE ELSE 0
+        END) AS IMF,
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE ELSE 0
+        END) AS TOTAL
+
+    FROM RESERVE_DATA
+    GROUP BY COUNTRY
+),
+ALL_RESERVES AS (SELECT
+    COUNTRY,
+CAST(
+        ROUND(
+            GREATEST(
+                TOTAL - (GOLD + SDRS + IMF),
+                0
+            ),
+        2)
+    AS DECIMAL(20,2)) AS FOREX,
+    CAST(ROUND(GOLD,2) AS DECIMAL(20,2)) AS GOLD,
+    CAST(ROUND(SDRS,2) AS DECIMAL(20,2)) AS SDRS,
+    CAST(ROUND(IMF,2) AS DECIMAL(20,2)) AS IMF,
+    CAST(ROUND(TOTAL,2) AS DECIMAL(20,2)) AS TOTAL
+FROM RESERVE_COMPONENTS
+)
+
+SELECT 
+	COUNTRY ,
+	CAST(ROUND(TO_PERC(TOTAL,GOLD),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE,
+	CAST(ROUND(TO_PERC(TOTAL,FOREX),2) AS DECIMAL(20,2)) AS FOREX_PERCENTAGE,
+    CAST(ROUND(TO_PERC(TOTAL,SDRs),2) AS DECIMAL(20,2)) AS SDRs_PERCENTAGE,
+    CAST(ROUND(TO_PERC(TOTAL,IMF),2) AS DECIMAL(20,2)) AS IMF_PERCENTAGE
+FROM ALL_RESERVES ORDER BY GOLD_PERCENTAGE DESC;
+
+
+
+
+
+# Which countries hold more than 30% of their reserves in gold, and how has that share changed year-over-year?
+
+WITH RESERVE_DATA AS (
+	SELECT
+        COUNTRY,
+        INDICATOR,
+        CASE
+            WHEN UNIT = 'FTO' THEN`2026_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2026_Q1` * 1.36
+            ELSE `2026_Q1`
+        END AS USD_VALUE_2026,
+                CASE
+            WHEN UNIT = 'FTO' THEN`2025_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2025_Q1` * 1.36
+            ELSE `2025_Q1`
+        END AS USD_VALUE_2025,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2024_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2024_Q1` * 1.36
+            ELSE `2024_Q1`
+        END AS USD_VALUE_2024,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2023_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2023_Q1` * 1.36
+			ELSE `2023_Q1`
+        END AS USD_VALUE_2023,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2022_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2022_Q1` * 1.36
+            ELSE `2022_Q1`
+        END AS USD_VALUE_2022,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2021_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2021_Q1` * 1.36
+            ELSE `2021_Q1`
+        END AS USD_VALUE_2021,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2020_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2020_Q1` * 1.36
+            ELSE `2020_Q1`
+        END AS USD_VALUE_2020,
+		CASE
+            WHEN UNIT = 'FTO' THEN`2019_Q1` * 4615
+            WHEN UNIT = 'XDR' THEN `2019_Q1` * 1.36
+            ELSE `2019_Q1`
+        END AS USD_VALUE_2019
+    FROM INTERNATIONAL_LIQUIDITY
+),
+RESERVE_COMPONENTS AS (
+    SELECT
+        COUNTRY,
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2026 ELSE 0
+        END) AS GOLD_2026,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2026 ELSE 0
+        END) AS TOTAL_2026,
+        
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2025 ELSE 0
+        END) AS GOLD_2025,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2025 ELSE 0
+        END) AS TOTAL_2025,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2024 ELSE 0
+        END) AS GOLD_2024,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2024 ELSE 0
+        END) AS TOTAL_2024,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2023 ELSE 0
+        END) AS GOLD_2023,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2023 ELSE 0
+        END) AS TOTAL_2023,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2022 ELSE 0
+        END) AS GOLD_2022,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2022 ELSE 0
+        END) AS TOTAL_2022,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2021 ELSE 0
+        END) AS GOLD_2021,
+
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2021 ELSE 0
+        END) AS TOTAL_2021,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2020 ELSE 0
+        END) AS GOLD_2020,
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2020 ELSE 0
+        END) AS TOTAL_2020,
+        
+        SUM(CASE
+            WHEN INDICATOR = 'Gold reserves at market value'
+            THEN USD_VALUE_2019 ELSE 0
+        END) AS GOLD_2019,
+
+        SUM(CASE
+            WHEN INDICATOR = 'Total reserves (gold at market value)'
+            THEN USD_VALUE_2019 ELSE 0
+        END) AS TOTAL_2019
+    FROM RESERVE_DATA
+    GROUP BY COUNTRY
+)
+
+SELECT 
+	COUNTRY ,
+	CAST(ROUND(TO_PERC(TOTAL_2026,GOLD_2026),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2026,
+	CAST(ROUND(TO_PERC(TOTAL_2025,GOLD_2025),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2025,
+	CAST(ROUND(TO_PERC(TOTAL_2024,GOLD_2024),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2024,
+	CAST(ROUND(TO_PERC(TOTAL_2023,GOLD_2023),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2023,
+	CAST(ROUND(TO_PERC(TOTAL_2022,GOLD_2022),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2022,
+	CAST(ROUND(TO_PERC(TOTAL_2021,GOLD_2021),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2021,
+	CAST(ROUND(TO_PERC(TOTAL_2020,GOLD_2020),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2020,
+	CAST(ROUND(TO_PERC(TOTAL_2019,GOLD_2019),2) AS DECIMAL(20,2)) AS GOLD_PERCENTAGE_2019
+FROM RESERVE_COMPONENTS ORDER BY GOLD_PERCENTAGE_2026 DESC;
