@@ -45,11 +45,11 @@ This project provides a **comprehensive analytical framework** for understanding
 
 | Metric | Insight | Trend |
 |--------|---------|-------|
-| **Top Gold Holder** | 🇺🇸 United States (41.71% of reserves in Gold, 2026) | 📈 +4.7pp since 2019 |
-| **Fastest Gold Accumulator** | 🇧🇬 Bulgaria (33.20% in 2026 vs 2.96% in 2019) | 🚀 +30.24pp |
-| **Highest Liquidity Risk** | 🇺🇸 US, 🇩🇪 Germany, 🇫🇷 France (Low Drain Exposure = High Illiquidity) | ⚠️ Illiquid |
-| **Biggest MoM Crash** | 🇮🇹 Italy (-80.05% Mar–Apr 2026) | 🔻 Sharp Decline |
-| **SDR Growth Leader** | 🇭🇷 Croatia (+15.86pp SDR share in 7 years) | 📊 Diversification |
+| **Top Gold Holder** | United States (41.71% of reserves in Gold, 2026) | 📈 +4.7pp since 2019 |
+| **Fastest Gold Accumulator** | Bulgaria (33.20% in 2026 vs 2.96% in 2019) | 🚀 +30.24pp |
+| **Highest Liquidity Risk** | US, Germany, France (Low Drain Exposure = High Illiquidity) | ⚠️ Illiquid |
+| **Biggest MoM Crash** | Italy (-80.05% Mar–Apr 2026) | 🔻 Sharp Decline |
+| **SDR Growth Leader** | Croatia (+15.86pp SDR share in 7 years) | 📊 Diversification |
 | **Regional Dominance** | "Other" economies hold **82.83%** of global reserves | 🌍 Dispersed |
 | **G20 Average** | Gold (13.17%) \| Forex (68.01%) \| SDRs (3.25%) \| IMF (0.57%) | 📋 Benchmark |
 
@@ -59,7 +59,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ```mermaid
 flowchart TD
-    A[Raw IMF Data] --&gt;|ETL / SQL| B[(IMF.sql Database)]
+    A[Raw IMF Data] --&gt;|ETL / SQL| B[(IMF_sql Database)]
     B --&gt; C[GOLD_REPORT.csv]
     B --&gt; D[RESERVES_REPORT_COUNTRYWISE.csv]
     B --&gt; E[DRAIN_EXPOSURE_REPORT_2026.csv]
@@ -67,4 +67,10 @@ flowchart TD
     B --&gt; G[SDR_SHARE_TREND_7_YEARS.csv]
     B --&gt; H[REGIONAL_SHARE_TOTAL_RESERVES_2026.csv]
     B --&gt; I[G20_AVG_COMPOSITION_2026.csv]
-    C & D & E & F & G & H & I --&gt; J[Power BI Dashboard&lt;br/&gt;IMF_GOLD_RESERVES_REPORT.pbix]
+    C --&gt; J[Power BI Dashboard]
+    D --&gt; J
+    E --&gt; J
+    F --&gt; J
+    G --&gt; J
+    H --&gt; J
+    I --&gt; J
