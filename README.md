@@ -17,12 +17,6 @@
 3. [Data Architecture](#-data-architecture)
 4. [Dataset Dictionary](#-dataset-dictionary)
 5. [Analytical Modules](#-analytical-modules)
-   - [Module A: Gold Reserves Trend](#module-a--gold-reserves-trend-analysis-20192026)
-   - [Module B: Reserve Composition](#module-b--country-wise-reserve-composition--g20-benchmarking)
-   - [Module C: Drain Exposure Risk](#module-c--drain-exposure--illiquidity-risk-assessment-2026)
-   - [Module D: MoM Volatility](#module-d--month-over-month-mom-volatility-march--april-2026)
-   - [Module E: SDR Share Evolution](#module-e--sdr-special-drawing-rights-share-evolution-20192026)
-   - [Module F: Regional Distribution](#module-f--regional-share-of-total-reserves-2026)
 6. [Power BI Dashboard](#-power-bi-dashboard)
 7. [Tech Stack](#-tech-stack)
 8. [How to Use](#-how-to-use)
@@ -54,34 +48,37 @@ This project provides a **comprehensive analytical framework** for understanding
 ---
 
 ## 🗂️ Data Architecture
+
+```
 ┌─────────────┐      ETL / SQL      ┌──────────────────┐
-│  Raw IMF    │  ---------------->  │   IMF.sql        │
+│  Raw IMF    │  ----------------&gt;  │   IMF.sql        │
 │    Data     │                     │   Database       │
 └─────────────┘                     └────────┬─────────┘
-│
-┌────────────────────────────────────────┼────────────────────────┐
-│                                        │                        │
-▼                                        ▼                        ▼
+                                             │
+    ┌────────────────────────────────────────┼────────────────────────┐
+    │                                        │                        │
+    ▼                                        ▼                        ▼
 ┌──────────────┐  ┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
 │ GOLD_REPORT  │  │ RESERVES_REPORT_    │  │ DRAIN_EXPOSURE_     │  │ MOM_CHANGE_2026_    │
 │ .csv         │  │ COUNTRYWISE.csv     │  │ REPORT_2026.csv     │  │ MARCH_APRIL.csv     │
 └──────────────┘  └─────────────────────┘  └─────────────────────┘  └─────────────────────┘
-│                                        │                        │
-│    ┌─────────────────────┐             │                        │
-│    │ SDR_SHARE_TREND_    │<────────────┘                        │
-│    │ 7_YEARS.csv         │                                      │
-│    └─────────────────────┘                                      │
-│    ┌─────────────────────┐                                      │
-└───>│ REGIONAL_SHARE_     │<─────────────────────────────────────┘
-│ TOTAL_RESERVES_2026 │
-└─────────────────────┘
-│
-▼
-┌─────────────────────┐
-│  Power BI Dashboard │
-│ IMF_GOLD_RESERVES_  │
-│    REPORT.pbix      │
-└─────────────────────┘
+    │                                        │                        │
+    │    ┌─────────────────────┐             │                        │
+    │    │ SDR_SHARE_TREND_    │&lt;────────────┘                        │
+    │    │ 7_YEARS.csv         │                                      │
+    │    └─────────────────────┘                                      │
+    │    ┌─────────────────────┐                                      │
+    └───&gt;│ REGIONAL_SHARE_     │&lt;─────────────────────────────────────┘
+         │ TOTAL_RESERVES_2026 │
+         └─────────────────────┘
+                          │
+                          ▼
+              ┌─────────────────────┐
+              │  Power BI Dashboard │
+              │ IMF_GOLD_RESERVES_  │
+              │    REPORT.pbix      │
+              └─────────────────────┘
+```
 
 ---
 
@@ -122,7 +119,7 @@ This project provides a **comprehensive analytical framework** for understanding
 | 9 | Greece | 34.51% | 31.93% | +2.58pp |
 | 10 | Türkiye | 33.85% | 10.64% | **+23.21pp** |
 
-> **Insight:** Türkiye and Bulgaria show explosive gold accumulation, suggesting a strategic pivot toward hard assets amid currency volatility.
+&gt; **Insight:** Türkiye and Bulgaria show explosive gold accumulation, suggesting a strategic pivot toward hard assets amid currency volatility.
 
 **Global Gold Trend (World Average)**
 
@@ -169,14 +166,14 @@ This project provides a **comprehensive analytical framework** for understanding
 
 **Objective:** Measure what portion of reserves is tied to liquid obligations vs truly available assets.
 
-> **Formula:** `DRAIN_EXPOSURE_PCT = (LIQUID_OBLIGATIONS / TOTAL_RESERVES) * 100`
-> 
-> **Interpretation:** A *low* drain exposure implies the country holds illiquid assets (e.g., physical gold) — flagged as **HIGH ILLIQUIDITY RISK**. A *high* drain exposure implies reserves are liquid/accessible.
+&gt; **Formula:** `DRAIN_EXPOSURE_PCT = (LIQUID_OBLIGATIONS / TOTAL_RESERVES) * 100`
+&gt; 
+&gt; **Interpretation:** A *low* drain exposure implies the country holds illiquid assets (e.g., physical gold) — flagged as **HIGH ILLIQUIDITY RISK**. A *high* drain exposure implies reserves are liquid/accessible.
 
 | Risk Category | Drain Exposure | Count | Examples |
 |:-------------:|:--------------:|:-----:|----------|
-| **HIGH ILLIQUIDITY RISK** | < 30% | 15 | USA (9.65%), Germany (11.69%), France (12.44%) |
-| **OK (Liquid)** | > 30% | 80+ | Switzerland (84.90%), Japan (88.28%), China (89.98%) |
+| **HIGH ILLIQUIDITY RISK** | &lt; 30% | 15 | USA (9.65%), Germany (11.69%), France (12.44%) |
+| **OK (Liquid)** | &gt; 30% | 80+ | Switzerland (84.90%), Japan (88.28%), China (89.98%) |
 
 **Illiquidity Risk Spectrum (Selected Nations)**
 
@@ -193,7 +190,7 @@ This project provides a **comprehensive analytical framework** for understanding
 | Japan | 88.28% | OK | █████████████████░░░ |
 | Korea | 94.26% | OK | ███████████████████░ |
 
-> **Insight:** Advanced economies (US, EU) hold massive gold stockpiles, making them "illiquid" on paper but strategically secure. Emerging markets maintain higher forex liquidity for trade stability.
+&gt; **Insight:** Advanced economies (US, EU) hold massive gold stockpiles, making them "illiquid" on paper but strategically secure. Emerging markets maintain higher forex liquidity for trade stability.
 
 ---
 
@@ -221,7 +218,7 @@ This project provides a **comprehensive analytical framework** for understanding
 | 4 | Maldives | $1.41B | $2.67B | -$1.26B | -47.10% |
 | 5 | Poland | $416.6B | $583.7B | -$167.1B | -28.62% |
 
-> **Insight:** Several major economies (Italy, Turkey, Kazakhstan) show extreme drawdowns. This may indicate central bank intervention to defend currency, debt servicing, or gold revaluation adjustments.
+&gt; **Insight:** Several major economies (Italy, Turkey, Kazakhstan) show extreme drawdowns. This may indicate central bank intervention to defend currency, debt servicing, or gold revaluation adjustments.
 
 ---
 
@@ -265,7 +262,7 @@ This project provides a **comprehensive analytical framework** for understanding
 | 6 | Africa | 6 | $5,651,383,400 | 0.34% | ░░░░░░░░░░░░░░░░░░░░ |
 | 7 | Eastern Europe & CIS | 3 | $4,085,643,400 | 0.25% | ░░░░░░░░░░░░░░░░░░░░ |
 
-> **Insight:** The "Other" category's dominance (82.83%) reflects the long-tail distribution where 156 smaller/individual economies collectively outweigh regional blocs.
+&gt; **Insight:** The "Other" category's dominance (82.83%) reflects the long-tail distribution where 156 smaller/individual economies collectively outweigh regional blocs.
 
 ---
 
@@ -280,7 +277,7 @@ The `IMF_GOLD_RESERVES_REPORT.pbix` file contains an interactive dashboard with:
 - **Regional Treemap:** Visual share of reserves by geography
 - **MoM Waterfall:** March to April 2026 change visualization
 
-> **Tip:** Open with **Power BI Desktop** to refresh data or publish to Power BI Service for sharing.
+&gt; **Tip:** Open with **Power BI Desktop** to refresh data or publish to Power BI Service for sharing.
 
 ---
 
@@ -297,16 +294,26 @@ The `IMF_GOLD_RESERVES_REPORT.pbix` file contains an interactive dashboard with:
 
 ## 🚀 How to Use
 
-### 1. Clone the Repository
-```bash
+**Step 1 — Clone the Repository**
+
+```
 git clone https://github.com/amriiiita07-ui/IMF-Data-Analysis.git
 cd IMF-Data-Analysis/IMF-Data-Analysis-main
+```
+
+**Step 2 — Setup the Database**
+
+```
 # For MySQL
-mysql -u root -p < IMF.sql
+mysql -u root -p &lt; IMF.sql
 
 # For PostgreSQL
 psql -U postgres -f IMF.sql
+```
 
+**Step 3 — Explore CSVs in Python**
+
+```python
 import pandas as pd
 
 # Load Gold Report
@@ -316,22 +323,37 @@ df_gold = pd.read_csv("GOLD_REPORT.csv")
 df_gold['CHANGE'] = df_gold['GOLD_PERCENTAGE_2026'] - df_gold['GOLD_PERCENTAGE_2019']
 top5 = df_gold.nlargest(5, 'CHANGE')[['COUNTRY', 'CHANGE']]
 print(top5)
-
-4. Open Power BI Report
-Launch IMF_GOLD_RESERVES_REPORT.pbix in Power BI Desktop
-Click Refresh to sync with your local SQL instance (if connected)
-🔮 Future Roadmap
-[ ] Automated ETL Pipeline: Python script to pull live IMF COFER data via API
-[ ] Currency Risk Model: Correlation matrix between USD strength and Forex reserve ratios
-[ ] Predictive Forecasting: ARIMA/Prophet models for 2027 gold share projections
-[ ] Web Dashboard: Streamlit or React frontend for browser-based exploration
-[ ] PDF Report Generator: Automated executive summary export
-👩‍💻 Author
-Amrita (@amriiiita07-ui)
-"Data is the new gold — but only if you know how to refine it."
-<div align="center">
-Star this repo if you found it insightful!
-Built with curiosity, SQL, and a lot of coffee.
-</div>
 ```
 
+**Step 4 — Open Power BI Report**
+
+- Launch `IMF_GOLD_RESERVES_REPORT.pbix` in **Power BI Desktop**
+- Click **Refresh** to sync with your local SQL instance (if connected)
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] **Automated ETL Pipeline:** Python script to pull live IMF COFER data via API
+- [ ] **Currency Risk Model:** Correlation matrix between USD strength and Forex reserve ratios
+- [ ] **Predictive Forecasting:** ARIMA/Prophet models for 2027 gold share projections
+- [ ] **Web Dashboard:** Streamlit or React frontend for browser-based exploration
+- [ ] **PDF Report Generator:** Automated executive summary export
+
+---
+
+## 👩‍💻 Author
+
+**Amrita** ([@amriiiita07-ui](https://github.com/amriiiita07-ui))
+
+&gt; *"Data is the new gold — but only if you know how to refine it."*
+
+---
+
+&lt;div align="center"&gt;
+  
+  **Star this repo if you found it insightful!**
+  
+  *Built with curiosity, SQL, and a lot of coffee.*
+
+&lt;/div&gt;
