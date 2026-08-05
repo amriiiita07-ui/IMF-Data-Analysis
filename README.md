@@ -1,4 +1,4 @@
-&lt;div align="center"&gt;
+div align="center"
   
   # 🏛️ IMF Global Reserves Analytics
   ### Deep-Dive Data Intelligence on IMF Reserve Composition, Liquidity Risk & Gold Trends (2019–2026)
@@ -7,7 +7,7 @@
   [![PowerBI](https://img.shields.io/badge/PowerBI-Interactive%20Dashboard-yellow?logo=powerbi)](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/IMF-Data-Analysis-main/IMF_GOLD_RESERVES_REPORT.pbix)
   [![Data](https://img.shields.io/badge/Data-CSV%20%7C%20SQL%20%7C%20PBIX-green?logo=databricks)](https://github.com/amriiiita07-ui/IMF-Data-Analysis/tree/main/IMF-Data-Analysis-main)
 
-&lt;/div&gt;
+/div
 
 ---
 
