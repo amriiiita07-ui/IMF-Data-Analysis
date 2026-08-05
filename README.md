@@ -1,6 +1,6 @@
 <div align="center">
   
-  # 🏛️ IMF Global Reserves Analytics
+  # IMF Global Reserves Analytics
   ### Deep-Dive Data Intelligence on IMF Reserve Composition, Liquidity Risk & Gold Trends (2019–2026)
 
   [![SQL](https://img.shields.io/badge/SQL-MySQL%2FPostgreSQL-blue?logo=postgresql)](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/IMF-Data-Analysis-main/IMF.sql)
@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Key Insights at a Glance](#-key-insights-at-a-glance)
 3. [Data Architecture](#-data-architecture)
@@ -25,7 +25,7 @@
 
 ---
 
-## 🌐 Project Overview
+## Project Overview
 
 This project provides a **comprehensive analytical framework** for understanding global foreign reserve dynamics using IMF-standard datasets. It tracks **gold accumulation trends**, **reserve composition shifts**, **liquidity risk exposure**, and **Special Drawing Rights (SDR)** adoption across 150+ economies from **2019 to 2026**.
 
@@ -33,7 +33,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ---
 
-## 🎯 Key Insights at a Glance
+## Key Insights at a Glance
 
 | Metric | Insight | Trend |
 |--------|---------|-------|
@@ -47,7 +47,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ---
 
-## 🗂️ Data Architecture
+## Data Architecture
 
 ```
 ┌─────────────┐      ETL / SQL      ┌──────────────────┐
@@ -82,7 +82,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ---
 
-## 📖 Dataset Dictionary
+## Dataset Dictionary
 
 | File Name | Records | Description |
 |-----------|---------|-------------|
@@ -98,7 +98,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ---
 
-## 🔬 Analytical Modules
+## Analytical Modules
 
 ### Module A | Gold Reserves Trend Analysis (2019–2026)
 
@@ -266,7 +266,7 @@ This project provides a **comprehensive analytical framework** for understanding
 
 ---
 
-## 📊 Power BI Dashboard
+## Power BI Dashboard
 
 The `IMF_GOLD_RESERVES_REPORT.pbix` file contains an interactive dashboard with:
 
@@ -281,7 +281,7 @@ The `IMF_GOLD_RESERVES_REPORT.pbix` file contains an interactive dashboard with:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|------------|---------|
@@ -292,7 +292,7 @@ The `IMF_GOLD_RESERVES_REPORT.pbix` file contains an interactive dashboard with:
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 **Step 1 — Clone the Repository**
 
@@ -332,7 +332,7 @@ print(top5)
 
 ---
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
 - [ ] **Automated ETL Pipeline:** Python script to pull live IMF COFER data via API
 - [ ] **Currency Risk Model:** Correlation matrix between USD strength and Forex reserve ratios
@@ -342,9 +342,9 @@ print(top5)
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Amrita** ([@amriiiita07-ui](https://github.com/amriiiita07-ui))
+**Amrita Singh** ([@amriiiita07-ui](https://github.com/amriiiita07-ui))
 
 &gt; *"Data is the new gold — but only if you know how to refine it."*
 
