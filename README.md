@@ -350,10 +350,10 @@ print(top5)
 
 ---
 
-&lt;div align="center"&gt;
+<div align="center">
   
   **Star this repo if you found it insightful!**
   
   *Built with curiosity, SQL, and a lot of coffee.*
 
-&lt;/div&gt;
+</div>
