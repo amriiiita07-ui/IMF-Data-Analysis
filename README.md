@@ -12,7 +12,7 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](https://github.com/amriiiita07-ui/imf-data-analysis/blob/main/project-overview)
+1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/project-overview)
 2. [Key Insights at a Glance](#-key-insights-at-a-glance)
 3. [Data Architecture](#-data-architecture)
 4. [Dataset Dictionary](#-dataset-dictionary)
