@@ -12,16 +12,16 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-Project-Overview)
-2. [Key Insights at a Glance](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-key-insights-at-a-glance)
-3. [Data Architecture](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-data-architecture)
-4. [Dataset Dictionary](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-dataset-dictionary)
-5. [Analytical Modules](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-analytical-modules)
-6. [Power BI Dashboard](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-power-bi-dashboard)
-7. [Tech Stack](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-tech-stack)
-8. [How to Use](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-how-to-use)
-9. [Future Roadmap](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-future-roadmap)
-10. [Author](https://github.com/amriiiita07-ui/IMF-Data-Analysis#-author)
+1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#Project-Overview)
+2. [Key Insights at a Glance](https://github.com/amriiiita07-ui/IMF-Data-Analysis#key-insights-at-a-glance)
+3. [Data Architecture](https://github.com/amriiiita07-ui/IMF-Data-Analysis#data-architecture)
+4. [Dataset Dictionary](https://github.com/amriiiita07-ui/IMF-Data-Analysis#dataset-dictionary)
+5. [Analytical Modules](https://github.com/amriiiita07-ui/IMF-Data-Analysis#analytical-modules)
+6. [Power BI Dashboard](https://github.com/amriiiita07-ui/IMF-Data-Analysis#power-bi-dashboard)
+7. [Tech Stack](https://github.com/amriiiita07-ui/IMF-Data-Analysis#tech-stack)
+8. [How to Use](https://github.com/amriiiita07-ui/IMF-Data-Analysis#how-to-use)
+9. [Future Roadmap](https://github.com/amriiiita07-ui/IMF-Data-Analysis#future-roadmap)
+10. [Author](https://github.com/amriiiita07-ui/IMF-Data-Analysis#author)
 
 ---
 
