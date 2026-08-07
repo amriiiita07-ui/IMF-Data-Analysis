@@ -346,7 +346,7 @@ print(top5)
 
 **Amrita Singh** ([@amriiiita07-ui](https://github.com/amriiiita07-ui))
 
-&gt; *"Data is the new gold — but only if you know how to refine it."*
+&gt; *"Data is the new gold, but only if you know how to refine it."*
 
 ---
 
