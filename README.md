@@ -31,7 +31,7 @@
 4. [Reserve Volatility](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/mom_volatility.png) - MoM volatility diverging bar
 5. [Drain Exposure](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/drain_exposure.png) - Risk spectrum bar chart
 6. [SDR Growth](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/sdr_growth.png) - SDR growth leaders chart
-7. [Regional Diversity] - Global reserve share by region 2026
+7. [Regional Share Diversity](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/regional_share_v2.png) - Regional Share of Total reserves
 ## Project Overview
 
 This project provides a **comprehensive analytical framework** for understanding global foreign reserve dynamics using IMF-standard datasets. It tracks **gold accumulation trends**, **reserve composition shifts**, **liquidity risk exposure**, and **Special Drawing Rights (SDR)** adoption across 150+ economies from **2019 to 2026**.
