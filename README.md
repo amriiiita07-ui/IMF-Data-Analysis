@@ -11,8 +11,8 @@
 
 ---
 
-## Table of Contents                                                                                                                     # Graphs & Charts
-1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#Project-Overview)                                              1.[Gold Trends](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/gold_trend.png)
+## Table of Contents                                                                                                                             # Graphs & Charts
+1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#Project-Overview)                                                      1.[Gold Trends](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/gold_trend.png)
 2. [Key Insights at a Glance](https://github.com/amriiiita07-ui/IMF-Data-Analysis#key-insights-at-a-glance)
 3. [Data Architecture](https://github.com/amriiiita07-ui/IMF-Data-Analysis#data-architecture)
 4. [Dataset Dictionary](https://github.com/amriiiita07-ui/IMF-Data-Analysis#dataset-dictionary)
