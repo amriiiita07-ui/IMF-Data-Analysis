@@ -11,8 +11,8 @@
 
 ---
 
-## Table of Contents                                                                                                                             # Graphs & Charts
-1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#Project-Overview)                                                      1.[Gold Trends](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/gold_trend.png)
+## Table of Contents                                                                                                                            
+1. [Project Overview](https://github.com/amriiiita07-ui/IMF-Data-Analysis#Project-Overview)                                                    
 2. [Key Insights at a Glance](https://github.com/amriiiita07-ui/IMF-Data-Analysis#key-insights-at-a-glance)
 3. [Data Architecture](https://github.com/amriiiita07-ui/IMF-Data-Analysis#data-architecture)
 4. [Dataset Dictionary](https://github.com/amriiiita07-ui/IMF-Data-Analysis#dataset-dictionary)
@@ -24,7 +24,14 @@
 10. [Author](https://github.com/amriiiita07-ui/IMF-Data-Analysis#author)
 
 ---
-
+# Graphs & Charts
+1. [Gold Trends](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/gold_trend.png) - World gold trend line chart
+2. [Gold Trends Top 10](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/gold_top10.png) - Top 10 gold-heavy countries bar chart
+3. [G20 Composition](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/g20_composition.png) - G20 average reserve composition 
+4. [Reserve Volatility](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/mom_volatility.png) - MoM volatility diverging bar
+5. [Drain Exposure](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/drain_exposure.png) - Risk spectrum bar chart
+6. [SDR Growth](https://github.com/amriiiita07-ui/IMF-Data-Analysis/blob/main/Graphs%20%26%20Charts/sdr_growth.png) - SDR growth leaders chart
+7. [Regional Diversity] - Global reserve share by region 2026
 ## Project Overview
 
 This project provides a **comprehensive analytical framework** for understanding global foreign reserve dynamics using IMF-standard datasets. It tracks **gold accumulation trends**, **reserve composition shifts**, **liquidity risk exposure**, and **Special Drawing Rights (SDR)** adoption across 150+ economies from **2019 to 2026**.
